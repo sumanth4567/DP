@@ -5,7 +5,7 @@ public class Choose {
     public static int choose(){
         Scanner sc = new Scanner(System.in);
         System.out.println();
-        System.out.println("There are 9 options from 1-9 choose any one to proceed : ");
+        System.out.println("There are 10 options from 1-10 choose any one to proceed : ");
         System.out.println("Below are the option values :");
         System.out.println("1 . ClimbStairs");
         System.out.println("2 . CoinChange");
@@ -15,7 +15,8 @@ public class Choose {
         System.out.println("6 . UniquePaths");
         System.out.println("7 . UniquePathsWithObstacles");
         System.out.println("8 . JumpGame");
-        System.out.println("9 . Exit");
+        System.out.println("9 . JumpGameII");
+        System.out.println("10 . Exit");
         System.out.println("Now choose a number from above : ");
         int number  = sc.nextInt();
         return number;

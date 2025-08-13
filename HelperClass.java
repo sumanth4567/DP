@@ -4,6 +4,7 @@ import src.ClimbStairs;
 import src.CoinChange;
 import src.HouseRobber;
 import src.JumpGame;
+import src.JumpGameII;
 import src.MinPathSum;
 import src.UniquePaths;
 import src.UniquePathsWithObstacles;
@@ -119,11 +120,26 @@ public class HelperClass {
                     }
                     break;
                 case 9:
+                    System.out.println("Enter the length of the Array : ");
+                    int len = sc.nextInt();
+                    int jumpArray[] = new int[len];
+                    System.out.println("Enter the elements into the array : ");
+                    for (int i = 0; i < jumpArray.length; i++) {
+                        jumpArray[i] = sc.nextInt();
+                    }
+                    int noOfJumps = JumpGameII.jumpGameII(jumpArray);
+                    if (noOfJumps >= 0) {
+                        System.out.println("We can reach the end of the array with a minimum of " + noOfJumps + " jumps.");
+                    } else {
+                        System.out.println("We cannot reach the end of the array!!");
+                    }
+                    break;
+                case 10:
                     System.out.println("Exiting.....!");
                     break;
                 default:
                     System.out.println("Invalid choice! Please try again.");
             }
-        } while (number != 9);
+        } while (number != 10);
     }
 }
